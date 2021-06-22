@@ -1,0 +1,52 @@
+body {
+    font: 18px Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #333;
+}
+
+h1 {
+    color: rgb(143, 143, 143);
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.input-border{
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+
+#tl{
+    position: relative;
+    bottom: -50px;
+    right: 210px;
+}
+
+#tr{
+    position: relative;
+    bottom: -30px;
+    left: 210px;
+}
+
+#br{
+    position: relative;
+    bottom: -360px;
+    left: 210px;
+}
+
+#bl{
+    position: relative;
+    bottom: -340px;
+    right: 210px;
+}
+
+#code{
+    width: 400px;
+    height: 300px;
+    resize: none;
+}
