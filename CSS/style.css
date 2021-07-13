@@ -16,9 +16,22 @@ h1 {
 }
 
 .input-border{
-    border: none;
     width: 15px;
     height: 15px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button 
+{ 
+    -webkit-appearance: none;
+}
+
+input[type=number] 
+{ 
+   -moz-appearance: textfield;
+   appearance: textfield;
 }
 
 #tl{
@@ -45,7 +58,7 @@ h1 {
     right: 210px;
 }
 
-#code{
+#box-preview{
     width: 400px;
     height: 300px;
     resize: none;
