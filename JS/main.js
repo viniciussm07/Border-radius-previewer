@@ -5,10 +5,14 @@ var input_tr = document.getElementById("tr");
 var input_br = document.getElementById("br");
 var input_bl = document.getElementById("bl");
 
+var btn_igualar = document.getElementById("btn-igualar");
+
 input_tl.onchange = atualizarPreview;
 input_tr.onchange = atualizarPreview;
 input_br.onchange = atualizarPreview;
 input_bl.onchange = atualizarPreview;
+
+btn_igualar.onclick = igualarBordas;
 
 function atualizarPreview(){
     validarCampos();
@@ -19,7 +23,7 @@ function atualizarPreview(){
     
     console.log("Propriedade: " + propriedade);
 
-    //document.getElementById("input-prop").value = propriedade;
+    document.getElementById("box-preview").value = propriedade;
 
     box_preview.style = propriedade;
 }
@@ -37,4 +41,16 @@ function validarCampos(){
         else if (valor.value > 150)
             valor.value = 150;
     }
+}
+
+function igualarBordas(){
+    validarCampos();
+
+    var valor_base = input_tl.value;
+
+    input_tr.value = valor_base;
+    input_br.value = valor_base;
+    input_bl.value = valor_base;
+
+    atualizarPreview()
 }

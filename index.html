@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Border Radius</title>
+    <title>Border Radius Previewer</title>
 </head>
 <body>
-    <h1>Border Radius</h1>
+    <h1>Border Radius Previewer</h1>
     <div class="container">
         <div>
             <input type="number" onClick="this.select();" class="input-border" id="tl" value="0">
@@ -21,8 +21,9 @@
             <input type="number" onClick="this.select();" class="input-border" id="bl" value="0">
         </div>
         <div>
-            <textarea readonly id="box-preview"></textarea>
+            <textarea readonly class="textarea" id="box-preview"></textarea>
         </div>
+        <button id="btn-igualar">Igualar Bordas</button>
     </div>
     <script src="JS/main.js"></script>
 </body>

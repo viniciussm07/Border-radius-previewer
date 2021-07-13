@@ -16,7 +16,7 @@ h1 {
 }
 
 .input-border{
-    width: 15px;
+    width: 25px;
     height: 15px;
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -62,4 +62,12 @@ input[type=number]
     width: 400px;
     height: 300px;
     resize: none;
+    line-height: 300px;
+    outline: none;
+}
+
+#btn-igualar{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
 }
